@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course chien</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><label for="course">Nom de la course :</label></td>
+        <td><input id="course" type="text"></td>
+    </tr>
+    <tr>
+        <td><label for="listePays">Pays :</label></td>
+        <td><select name="country" id="listePays"></select></td>
+    </tr>
+    <tr>
+        <td><label for="time">Durée de la course :</label></td>
+        <td><input type="time" id="time" step='1' min="00:00:00" max="20:00:00" value="00:00:00"></td>
+    </tr>
+
+</table>
+
+<button id="insc">Commencer les inscriptions</button>
+
+<div id="divCourse" hidden>
+    <table>
+        <tr>
+            <td id="dataCourse">
+                <label for="listeChien">Choisissez un chien :</label>
+                <select name="chiens" id="listeChien"></select>
+                <button id="chienInsc">Inscrire</button>
+                <button id="closeCourse">Cloturer les inscriptions</button>
+            </td>
+        </tr>
+    </table>
+
+    <table id="tabChiens">
+
+    </table>
+</div>
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="easytimer.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
